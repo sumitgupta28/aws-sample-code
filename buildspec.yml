@@ -21,6 +21,10 @@ phases:
     commands:
       - echo Entered the post_build phase...
       - echo Build completed on `date`   
+      - ls -lrt 
+      - pwd
+      - unzip build/distributions/aws-sample-code-0.1.zip .
+      - ls -lrt 
 
 
 artifacts:

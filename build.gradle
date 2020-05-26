@@ -41,7 +41,6 @@ dependencies {
 
 distributions {
     main {
-		baseName  = 'aws-sample-code'
         contents {
             from jar
 			from ('scripts') { include '*.sh'}
