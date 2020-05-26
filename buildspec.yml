@@ -24,7 +24,7 @@ phases:
       - ls -lrt 
       - pwd
       - cd build/distributions
-      - unzip aws-sample-code-0.1.zip .
+      - unzip aws-sample-code-0.1.zip
       - ls -lrt 
       - rm -rf aws-sample-code-0.1.zip
       - ls -lrt 
