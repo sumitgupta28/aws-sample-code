@@ -12,7 +12,14 @@ import static java.lang.String.format;
 public class HelloController {
     @RequestMapping("/")
     public String index() {
-        return format("Greetings from the AWS CDK! The current date-time is: '%s'.",
+        return format("Greetings from the AWS! The current date-time is: '%s'.",
+                Instant.now().atZone(ZoneId.of("America/Los_Angeles")).toString());
+    }
+    
+    
+    @RequestMapping("/health-check")
+    public String healthCheck() {
+        return format("Greetings from the AWS! The current date-time is: '%s'.",
                 Instant.now().atZone(ZoneId.of("America/Los_Angeles")).toString());
     }
 }
