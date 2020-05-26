@@ -1,0 +1,45 @@
+group 'com.amazon.lpt.cdk.manual_test'
+version '0.1'
+
+buildscript {
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:2.0.0.RELEASE")
+        classpath("org.unbroken-dome.gradle-plugins:gradle-testsets-plugin:1.4.5")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+apply plugin: 'org.unbroken-dome.test-sets'
+
+repositories {
+    mavenCentral()
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+testSets {
+    integTest { dirName = 'test-integ' }
+}
+
+project.integTest {
+    outputs.upToDateWhen { false }
+}
+
+bootJar {
+    launchScript()
+}
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-web")
+    testCompile("junit:junit")
+    testCompile("org.assertj:assertj-core:3.11.1")
+}
