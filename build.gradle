@@ -1,4 +1,4 @@
-group 'com.amazon.lpt.cdk.manual_test'
+group 'com.aws.sample'
 version '0.1'
 
 buildscript {

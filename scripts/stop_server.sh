@@ -1,4 +1,4 @@
 #!/bin/bash
 
-service cdk-app stop
+service aws-sample-app stop
 exit 0

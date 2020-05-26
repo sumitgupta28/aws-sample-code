@@ -1,4 +1,3 @@
-import hello.Application;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -6,6 +5,8 @@ import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpMethod;
 import org.springframework.web.client.RestTemplate;
+
+import com.aws.sample.Application;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

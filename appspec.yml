@@ -1,8 +1,8 @@
 version: 0.0
 os: linux
 files:
-  - source: cdk-manual-test-spring-boot-0.1.jar
-    destination: /var/cdk-app/
+  - source: aws-sample-code-0.1.jar
+    destination: /var/aws-sample-app/
 hooks:
   ApplicationStop:
     - location: stop_server.sh

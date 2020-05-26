@@ -2,6 +2,8 @@ package hello;
 
 import org.junit.Test;
 
+import com.aws.sample.HelloController;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class RandomUnitTest {

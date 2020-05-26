@@ -1,3 +1,3 @@
 #!/bin/bash
 
-ln -s -f /var/cdk-app/cdk-manual-test-spring-boot-0.1.jar /etc/init.d/cdk-app
+ln -s -f /var/aws-sample-app/aws-sample-code-0.1.jar /etc/init.d/aws-sample-app

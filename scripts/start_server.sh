@@ -1,3 +1,3 @@
 #!/bin/bash
 
-service cdk-app start
+service aws-sample-app start
