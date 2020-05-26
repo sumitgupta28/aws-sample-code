@@ -3,6 +3,7 @@ version: 0.2
 phases:
   build:
     commands:
+      - java --version 
       - chmod a+x gradlew
       - ./gradlew build
 artifacts:
