@@ -25,7 +25,5 @@ phases:
 
 artifacts:
   files:
-  - build/libs/aws-sample-code-0.1.jar
-  - appspec.yml
-  - scripts/*
+  - build/distributions/aws-sample-code-0.1.zip
   discard-paths: true
