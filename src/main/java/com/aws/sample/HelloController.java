@@ -19,7 +19,7 @@ public class HelloController {
     
     @RequestMapping("/health-check")
     public String healthCheck() {
-        return format("Greetings from the AWS! The current date-time is: '%s'.",
+        return format("health-check is successful: '%s'.",
                 Instant.now().atZone(ZoneId.of("America/Los_Angeles")).toString());
     }
 }

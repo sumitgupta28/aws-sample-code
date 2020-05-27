@@ -12,7 +12,7 @@ buildscript {
 	}
 }
 
-apply plugin: 'distribution'
+//apply plugin: 'distribution'
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'idea'
@@ -25,12 +25,6 @@ repositories { mavenCentral() }
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
-testSets { integTest { dirName = 'test-integ'
-	} }
-
-project.integTest { outputs.upToDateWhen { false
-	} }
-
 bootJar { launchScript() }
 
 dependencies {
@@ -38,7 +32,7 @@ dependencies {
 	testCompile("junit:junit")
 	testCompile("org.assertj:assertj-core:3.11.1")
 }
-
+/*
 distributions {
     main {
         contents {
@@ -48,5 +42,5 @@ distributions {
         }
     }
 }
-
+*/
 

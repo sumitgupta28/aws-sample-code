@@ -23,16 +23,9 @@ phases:
       - echo Build completed on `date`   
       - ls -lrt 
       - pwd
-      - cd build/distributions
-      - unzip aws-sample-code-0.1.zip
-      - ls -lrt 
-      - rm -rf aws-sample-code-0.1.zip
-      - rm -rf aws-sample-code-0.1.tar
-      - ls -lrt 
-      - cp ./aws-sample-code-0.1/*.* .
-      - ls -lrt 
-      - rm -rf aws-sample-code-0.1
-      - ls -lrt
+      - cp ./scripts/*.* ./build/libs/
+      - cp *.yml ./build/libs/
+      - cd /build/libs/
       - zip aws-sample-code-0.1.zip *.*
       - ls -lrt
 
