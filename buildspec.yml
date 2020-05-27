@@ -25,11 +25,11 @@ phases:
       - pwd
       - cp ./scripts/*.* ./build/libs/
       - cp *.yml ./build/libs/
-      - cd /build/libs/
+      - cd build/libs
       - zip aws-sample-code-0.1.zip *.*
       - ls -lrt
 
 artifacts:
   files:
-  - build/distributions/aws-sample-code-0.1.zip
+  - build/libs/aws-sample-code-0.1.zip
   discard-paths: true
